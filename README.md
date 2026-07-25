@@ -76,16 +76,6 @@ npm run dev
 # open http://localhost:3000
 ```
 
-## Design lineage
-
-RegProof deliberately "steals like an artist" from three hackathon-winning projects, blended into
-financial-services contract remediation:
-
-- **RuleLift** — *prove, don't trust*: a deterministic layer the model can't hallucinate past, and
-  a single headline exposure number as the money-shot.
-- **Remedia** — *control beats autonomy*: cohorts, a human approval gate, forced escalation and an
-  immutable audit trail as hard-coded invariants.
-- **SipQuest** — *intent → verified outcome*: natural-language ambition, but a checked result.
 
 ---
 
