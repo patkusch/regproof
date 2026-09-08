@@ -19,10 +19,6 @@ export function requiresEscalation(c: Contract): boolean {
   return c.governingLaw !== c.jurisdiction;
 }
 
-function clauseTitle(id: ClauseId): string {
-  return CLAUSES.find((x) => x.id === id)?.title ?? id;
-}
-
 // Deterministic, fully-explainable clustering: exact group-by on
 // (missing-clause-set × criticality). No embeddings, no model. Re-run it a
 // thousand times and you get byte-identical cohorts. Jurisdiction isn't a

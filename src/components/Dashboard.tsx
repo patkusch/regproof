@@ -19,14 +19,19 @@ export default function Dashboard() {
   const [approver, setApprover] = useState("");
   const [error, setError] = useState<string | null>(null);
 
-  const refresh = useCallback(async () => {
-    const [s, a] = await Promise.all([
-      fetch("/api/scan").then((r) => r.json()),
-      fetch("/api/audit").then((r) => r.json()),
-    ]);
-    setScan(s);
-    setAudit(a);
-  }, []);
+  // Fetch first, set state in the continuation: the effect below must not call
+  // setState synchronously (react-hooks/set-state-in-effect), and it doesn't.
+  const refresh = useCallback(
+    () =>
+      Promise.all([
+        fetch("/api/scan").then((r) => r.json()),
+        fetch("/api/audit").then((r) => r.json()),
+      ]).then(([s, a]) => {
+        setScan(s);
+        setAudit(a);
+      }),
+    [],
+  );
 
   useEffect(() => {
     refresh();

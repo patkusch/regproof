@@ -11,7 +11,6 @@ interface State {
 }
 
 declare global {
-  // eslint-disable-next-line no-var
   var __regproof: State | undefined;
 }
 
