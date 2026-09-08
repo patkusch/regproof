@@ -17,5 +17,7 @@ jobs:
         run: npm run lint
       - name: typecheck
         run: npx tsc --noEmit
+      - name: engine and approval-gate tests
+        run: npm test
       - name: production build
         run: npm run build

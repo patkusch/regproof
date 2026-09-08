@@ -76,6 +76,11 @@ npm run dev
 # open http://localhost:3000
 ```
 
+`npm test` pins the claims above: the seed is identical on every run, cohorts are
+byte-identical across runs, every member of a cohort shares its remediation shape,
+cross-border contracts are never grouped with domestic ones, and the approval gate
+refuses a blank or `agent` approver without touching the state or the audit log.
+
 
 ---
 
