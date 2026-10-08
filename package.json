@@ -1,6 +1,11 @@
 {
   "name": "regproof",
   "version": "0.1.0",
+  "author": "patkusch",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/patkusch/regproof.git" },
+  "homepage": "https://github.com/patkusch/regproof#readme",
+  "bugs": { "url": "https://github.com/patkusch/regproof/issues" },
   "private": true,
   "scripts": {
     "dev": "next dev",
