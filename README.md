@@ -9,6 +9,7 @@
 
 <br/>
 
+[![ci](https://github.com/patkusch/regproof/actions/workflows/ci.yml/badge.svg)](https://github.com/patkusch/regproof/actions/workflows/ci.yml)
 [![RegProof refusing to let the agent approve a cross-border contract](./docs/hero.png)](./docs/hero.png)
 
 **A real run of the app.** Two of the fifteen groups. The name "agent" was typed as the approver, and the app said no.
