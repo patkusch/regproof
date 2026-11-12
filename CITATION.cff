@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "regproof"
+abstract: "A helper for rolling out a regulation change. It finds the affected items, groups them and drafts the fixes; a person approves each group, and every action is logged and checked. Built around the DORA regulation."
+type: software
+authors:
+  - family-names: "Kusch"
+    given-names: "Patricia"
+repository-code: "https://github.com/patkusch/regproof"
+license: MIT
