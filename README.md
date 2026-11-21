@@ -146,3 +146,7 @@ one the code verifies. The demo has no sign-in.
 <div align="center">
 <sub>Hackathon build · synthetic data, illustrative figures · MIT</sub>
 </div>
+
+---
+
+[Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Security policy](SECURITY.md)
